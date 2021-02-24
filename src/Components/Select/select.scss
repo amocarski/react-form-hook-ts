@@ -1,0 +1,31 @@
+.select {
+    position: relative;
+    margin: 15px 0 15px 0;
+  }
+  select {
+    appearance: none;
+    background-color: none;
+    border: 1px solid black;
+    font-size: 17px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 60px;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    height: 42px;
+  }
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }

@@ -1,0 +1,45 @@
+.input {
+  margin: 15px 0 15px 0;
+}
+
+input[type="text"] {
+  appearance: none;
+  background-color: none;
+  border: 1px solid black;
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  &:focus {
+    outline: none;
+  }
+}
+
+.danger {
+  & > input[type="text"] {
+    border: 1px solid red !important;
+  }
+}
+
+.label {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 5px;
+}
+
+.helper-text {
+  color: red;
+  margin-left: 10px;
+  position: relative;
+  top: 5px;
+  display: block;
+}

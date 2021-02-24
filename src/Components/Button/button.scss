@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 8px;
+  text-decoration: none;
+  background: blue;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:hover,
+  &:focus {
+    background: lighten($color: blue, $amount: 10%);
+  }
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+  &:disabled {
+    background-color: darken($color: blue, $amount: 30%);
+    color: darken($color: blue, $amount: 10%);
+    cursor: default;
+  }
+}
